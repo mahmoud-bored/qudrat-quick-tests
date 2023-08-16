@@ -87,7 +87,6 @@ html body .test-results-container .check-cross-filter-body-container .filter-bod
 html body .test-results-container .check-cross-filter-body-container .filter-body .result-answer-container {
   position: relative;
   width: 90%;
-  z-index: 4;
 }
 html body .test-results-container .check-cross-filter-body-container .filter-body .result-answer-container .result-header-container {
   height: 50px;
