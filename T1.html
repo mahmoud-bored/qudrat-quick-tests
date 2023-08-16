@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="T1-style.css">
+    <title>تناظر لفظي</title>
+</head>
+<body>
+    <div class="test-results-container">
+        <h2 class="test-results-title">
+            تقرير التمرين
+        </h2>
+        <div class="check-cross-filter-header-container">
+            <div class="filter-header-container cross-filter-header-container">
+                <div class="filter-header cross-filter-header" onclick="showFilterBody('cross')">
+                    <img src="./imgs/cross.png">
+                </div>
+            </div>
+            <div class="filter-header-container check-filter-header-container filter-header-container-disabled">
+                <div class="filter-header check-filter-header" onclick="showFilterBody('check')">
+                    <img src="./imgs/check.png">
+                </div>
+            </div>
+        </div>
+        <div class="check-cross-filter-body-container">
+            <div class="check-filter-body filter-body filter-body-hide"></div>
+            <div class="cross-filter-body filter-body"></div>
+        </div>
+    </div>  
+    <div class="test-options-container">
+        <div class="test-options">
+            <div class="test-option-container">
+                <label>عدد الأسئلة</label>
+                <input type="number" value="30" class="test-option-input questions-amount">
+            </div>
+            <div class="test-option-container">
+                <label>وقت السؤال</label>
+                <input type="number" value="15" class="test-option-input timer-set">
+            </div>
+            <div class="test-option-container test-option-enter" onclick="startTest()">
+                <img src="./imgs/left-arrow.png" alt="">
+                <p>ابدأ</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="timer-container">
+            <h2></h2>
+        </div>
+        <div class="question-container">
+            <img src="" alt="" class="question-img question-q-img">
+            <img src="" alt="" class="question-img question-a-1-img">
+            <img src="" alt="" class="question-img question-a-2-img">
+            <img src="./imgs/check.png" class="check-pick hide">
+            <img src="./imgs/cross.png" class="cross-pick hide">
+        </div>
+        <div class="bottom-container">
+            <div class="whiteboard-container">
+                <img src="./imgs/lock.png">
+            </div>
+            <div class="choices-container">
+                <div class="choice" onclick="choicePick('أ')">أ</div>
+                <div class="choice" onclick="choicePick('ب')">ب</div>
+                <div class="choice" onclick="choicePick('ج')">ج</div>
+                <div class="choice" onclick="choicePick('د')">د</div>
+            </div>
+        </div>
+    </main>
+    <script src="./T1-main.js"></script>
+</body>
+</html>
